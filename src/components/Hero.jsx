@@ -89,12 +89,14 @@ const Hero = () => {
 				{
 					scale: 1,
 					opacity: 0.5,
+					yPercent: 0,
 				},
 				{
 					scale: 1.2,
 					opacity: 1,
 					duration: 1,
 					ease: "power2.out",
+					yPercent: 25, // Move down by 25% of element height
 				}
 			)
 			.to(".video", {
@@ -102,6 +104,7 @@ const Hero = () => {
 				opacity: 0.5,
 				duration: 1,
 				ease: "power2.inOut",
+				yPercent: 50, // Move down by 50% of element height
 			});
 	}, []);
 	return (
